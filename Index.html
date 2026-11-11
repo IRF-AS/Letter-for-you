@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter For Ruhi ♡</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #101010;
+  color: #222;
+  font-family: Georgia, serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+.cover {
+  background: #191919;
+  color: white;
+  border: 1px solid #393939;
+  border-radius: 15px;
+  padding: 45px 22px;
+  box-shadow: 0 15px 50px #000;
+}
+
+.small {
+  color: #aaa;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 25px 0 10px;
+}
+
+.heart {
+  color: #d96b78;
+  font-size: 45px;
+  margin: 20px;
+  animation: beat 1.5s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.15); }
+}
+
+button {
+  background: #f2eee8;
+  color: #171717;
+  border: none;
+  padding: 14px 27px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #d9c9c9;
+}
+
+.letter {
+  display: none;
+  background: #f4f0e9;
+  color: #302c28;
+  padding: 35px 25px;
+  margin-top: 22px;
+  border-radius: 9px;
+  text-align: left;
+  line-height: 1.85;
+  box-shadow: 0 12px 40px #0008;
+}
+
+.letter.show {
+  display: block;
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.letter h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+.letter p {
+  font-size: 15px;
+  margin: 17px 0;
+}
+
+.highlight {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.footer {
+  color: #888;
+  font-size: 11px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+
+@media(max-width: 480px) {
+  h1 { font-size: 29px; }
+  .letter { padding: 25px 19px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="cover">
+    <div class="small">A LITTLE SOMETHING FOR YOU</div>
+
+    <h1>Hey, Ruhi. ♡</h1>
+
+    <div class="heart">♡</div>
+
+    <p>Some things are easier to write than to say.</p>
+    <p style="color:#999;font-size:13px">
+      A little explanation from me to you.
+    </p>
+
+    <button onclick="openLetter()">
+      Open your letter ♡
+    </button>
+  </div>
+
+  <div class="letter" id="letter">
+
+    <h2>Dear Ruhi, ♡</h2>
+
+    <p>Maybe it's a little too late to explain all this,
+    but mujhe bolne do.</p>
+
+    <p>As you know, Diwali ke baad se main kaafi kam
+    online aa raha hoon. Maybe tumhe kabhi feel hota
+    hoga ki main jaan-bujhkar aisa kar raha hoon,
+    ya tumse baat karna avoid kar raha hoon.
+    But nahi Ruhi, honestly, aisa bilkul nahi hai.</p>
+
+    <p>Actually, main kuch zyada hi faltu cheezon mein
+    busy ho gaya hoon. It's like I've become lazy,
+    something I never used to feel before. Jab mere
+    exams the tab bhi idk meri body aisa feel karti
+    thi jaise main 40 years old hoon or something. 😭</p>
+
+    <p>But that's not the actual reason.</p>
+
+    <p>The truth is, main chah kar bhi utna active nahi
+    reh paa raha hoon. I know, sunne mein kaafi weird
+    lagta hai. Main tumse baat karna chahta hoon,
+    tumhare saath time spend karna chahta hoon,
+    but idk kyun main khud ko hi ek ajeeb tarah se
+    dekhne laga hoon.</p>
+
+    <p>Maybe I'm less socially interactive, maybe I
+    overthink too much, or maybe I simply consider
+    myself more useless than I actually am.</p>
+
+    <p>Aur isi wajah se kabhi-kabhi mujhe lagta hai
+    ki main uss level ka hi nahi hoon jiske saath
+    tum deserve karti ho baat karna.</p>
+
+    <p>Because seriously, Ruhi, what have I given you?</p>
+
+    <p>Not even an edit of your Diwali outfit, not even
+    those little gifts, chocolates, or creative surprises.</p>
+
+    <p>I feel bad because main tumhe itna chahta hoon
+    ki mann karta hai tumhe roz chhoti-chhoti gifts doon,
+    chocolates doon, decorated letters bana kar doon,
+    aur tumhari aur meri ek cute si story create karun.
+    Something that I can personally tumhare saamne
+    laakar doon, aur tum use read karo.</p>
+
+    <p>And it's not that I can't do these things.
+    Mujhe nahi aata toh seekh jaaunga. But the actual
+    problem is privacy, my mental state, and this habit
+    of waiting for a perfect time. And honestly,
+    that perfect time never seems to arrive.</p>
+
+    <p>Maybe I need a little support from you too.</p>
+
+    <p>And haan Ruhi, kabhi bhi ye mat sochna ki
+    I love you any less now. (LOL 😭)</p>
+
+    <p>Nahi Ruhi, you're someone I genuinely imagine
+    in my future. You're my future wife, and I can't
+    even imagine replacing the place you've made
+    in my heart. That place is yours, permanently. ❤️</p>
+
+    <p>And I know you're also dealing with things in
+    your own life, especially with your family and Dad.
+    Dekho Ruhi, whenever you feel like sharing something,
+    you can always tell me. You don't have to keep
+    everything to yourself.</p>
+
+    <p>I can't guarantee that kal se main suddenly
+    bahut zyada online aa jaaunga, but I'll genuinely
+    try to improve.</p>
+
+    <p>And you know what? If you ever ask me how I
+    want us to spend time together, I'd say:</p>
+
+    <div class="highlight">
+      Why don't we study together for just one hour? ♡
+    </div>
+
+    <p>At least mujhe bhi feel hoga ki I've done
+    something productive.</p>
+
+    <p>And why don't we give ourselves another 1–2
+    hours just for us? Main apne edits karunga,
+    tum bhi apne editing comeback ki preparation
+    karna. 😭❤️</p>
+
+    <p>That way, dono ko kuch productive karne ka
+    satisfaction bhi milega, aur hum saath mein
+    time bhi spend kar paayenge.</p>
+
+    <p>I don't want us to feel like spending time
+    together means wasting time. I want us to grow
+    individually while still being part of each
+    other's lives.</p>
+
+    <p>So, think about it, okay?</p>
+
+    <p>Btw, ye letter likhte-likhte already 5:04 AM
+    ho gaye hain. 😭 I don't even know when I'm
+    finally going to send this to you, but hopefully
+    you'll read every single word.</p>
+
+    <p>Chalo phir, subah milte hain.</p>
+
+    <p>I can't wait for your reply. I'm missing you,
+    Ruhi.</p>
+
+    <h2>Good night, ♡</h2>
+
+    <div class="signature">
+      Yours, always ❤️
+    </div>
+
+    <div class="footer" style="text-align:center">
+      MADE WITH LOVE · JUST FOR RUHI
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function openLetter() {
+  const letter = document.getElementById("letter");
+  letter.classList.add("show");
+
+  setTimeout(() => {
+    letter.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 100);
+}
+</script>
+
+</body>
+</html>
